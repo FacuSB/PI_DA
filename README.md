@@ -1,7 +1,7 @@
 <h1 align="center">Proyecto Individual DA N°1</h1>
 <h2 align="center">Facundo Blanco</h2>
 <p align="center">
-<img src="https://www.cio.com/wp-content/uploads/2023/05/statistics-stats-big-data-analytics-100613892-orig-4.jpg?quality=50&strip=all"  height=600>
+<img src="https://www.cio.com/wp-content/uploads/2023/05/statistics-stats-big-data-analytics-100613892-orig-4.jpg?quality=50&strip=all"  height=400>
 </p>
 
 ## Descripcion
@@ -76,7 +76,7 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
     El diseño sigue el patrón Z, con el título de la página y datos importantes en la parte superior. El espacio central se ocupa con gráficos de mayor jerarquía, y a la derecha se encuentran los filtros para aplicar al dashboard.
 
     <p align="center">
-    <img src="img/Diseño dashboard.jpg"  height=600>
+    <img src="img/Diseño dashboard.jpg"  height=400>
     </p>
 
     Este diseño sigue una distribución visual efectiva, facilitando la comprensión de los datos para los usuarios. Además, se proporcionan filtros para permitir una interacción más personalizada con el dashboard.
