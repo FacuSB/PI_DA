@@ -16,7 +16,6 @@ En este proyecto, he desarrollado un Análisis de Siniestros Viales en Buenos Ai
 >   - [3 Dashboard Streamlit](#3-dashboard-streamlit)
 >   - [4 Despliegue](#4-despliegue)
 >- [Analisis y Conclusiones](#analisis-y-conclusiones)
->- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 >- [Fuente de Datos](#fuente-de-datos)
 >- [Contacto](#contacto)
 
@@ -31,20 +30,20 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
 
 - ### **1 EDA (Análisis Exploratorio de Datos)**
 
-       Durante la fase de Análisis Exploratorio de Datos (EDA), se llevaron a cabo las siguientes acciones:
+       Durante la fase de Análisis Exploratorio de Datos (EDA), lleve a cabo las siguientes acciones:
 
-    - **Revisión de Columnas:** Se analizaron las columnas para entender su contenido y tipo de dato.
-    - **Normalizaciones:** Se realizaron normalizaciones de datos, corrigiendo nombres de columnas mal escritos, ajustando tipos de datos y normalizando valores en las columnas.
-    - **Eliminación de Duplicados y Nulos:** Se eliminaron duplicados y registros nulos que pudieran afectar la calidad de los datos.
-    - **Visualizaciones Gráficas:** Se crearon gráficos para visualizar el comportamiento de los datos y detectar posibles errores o patrones.
-    - **Normalizaciones Adicionales:** Se realizaron normalizaciones adicionales después de las visualizaciones para abordar cualquier problema identificado.
-    - **Combinación de Datasets:** Se combinaron datasets en uno solo después de asegurar la coherencia y calidad de los datos.
+    - **Revisión de Columnas:** Analice las columnas para entender su contenido y tipo de dato.
+    - **Normalizaciones:** Realice normalizaciones de datos, corrigiendo nombres de columnas mal escritos, ajustando tipos de datos y normalizando valores en las columnas.
+    - **Eliminación de Duplicados y Nulos:** Elimine duplicados y registros nulos que pudieran afectar la calidad de los datos.
+    - **Visualizaciones Gráficas:** Cree gráficos para visualizar el comportamiento de los datos y detectar posibles errores o patrones.
+    - **Normalizaciones Adicionales:** Realice normalizaciones adicionales después de las visualizaciones para abordar cualquier problema identificado.
+    - **Combinación de Datasets:** Combine los datasets en uno solo después de asegurar la coherencia y calidad de los datos.
     - **Exportación de Datos:** Los datos preparados se exportaron en archivos CSV para su uso posterior en las herramientas Power BI y Streamlit.
 
     [Notebook EDA](EDA.ipynb) ofrece detalles más específicos y los datasets optimizados están listos para ser utilizados en las siguientes etapas del proyecto, incluyendo la construcción de dashboards interactivos.
 
 - ### **2 Dashboard Interactivo**
-    Para el diseño del dashboard interactivo, se realizaron análisis detallados divididos en tres partes principales, cada una con su propia página dentro del dashboard:
+    Para el diseño del dashboard interactivo, realice análisis divididos en tres partes principales, cada una con su propia página dentro del dashboard:
 
     1. **Análisis Temporal:**
         - La primera página se centra en el tiempo, distribuyendo los accidentes en diferentes periodos de tiempo. Los gráficos proporcionan una visión clara de cómo la cantidad de accidentes varía a lo largo del tiempo.
@@ -59,7 +58,7 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
         - La última página del dashboard presenta indicadores clave de rendimiento (KPIs) esenciales.
 
 
-        Para evaluar el impacto y la gravedad de los siniestros viales, se han identificado tres indicadores clave de rendimiento (KPIs):
+        Para evaluar el impacto y la gravedad de los siniestros viales, ocupe tres indicadores clave de rendimiento (KPIs):
         1. **Tasa de Homicidios por 100,000 Habitantes:**
             - Este indicador proporciona una perspectiva sobre la gravedad de los siniestros viales en términos de pérdida de vidas humanas, normalizado por la población.
 
@@ -85,7 +84,7 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
     [Dashboard Interactivo](dashboard/dashboardv2.pbix) En este enlace se puede ir al Dashboard Interactivo para que puedan explorar los datos por sí mismos.
 
 - ### **3 Dashboard Streamlit**
-    Aprovechando la oportunidad para explorar nuevas herramientas, se decidió utilizar Streamlit para crear un dashboard interactivo. Este dashboard presenta los mismos gráficos generados durante el análisis exploratorio de datos (EDA) utilizando código Python.
+    Aprovechando la oportunidad decidi explorar nuevas herramientas, decidi utilizar Streamlit para crear un dashboard interactivo. Este dashboard presenta los mismos gráficos generados durante el análisis exploratorio de datos (EDA) utilizando código Python.
 
     El código utilizado para la herramienta de Streamlit se encuentra en los archivos:
     
@@ -96,7 +95,7 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
 
 - ### **4 Despliegue**
 
-    Para el despliegue de la aplicación Streamlit, se siguió la guía paso a paso proporcionada por Streamlit. El despliegue se realizó vinculando directamente este repositorio.
+    Para el despliegue de la aplicación Streamlit, segui la guía paso a paso proporcionada por Streamlit. El despliegue se realizó vinculando directamente este repositorio.
 
     El proceso de despliegue implicó:
 
@@ -113,23 +112,47 @@ Mi objetivo principal es proporcionar información valiosa que permita a las aut
 
 
 ## **Analisis y Conclusiones**
+### Problemas Detectados durante las Visualizaciones:
+
+1. **Aumento en Muertes durante Noviembre y Diciembre:**
+   Durante estos meses, hay un aumento en las muertes por accidentes, posiblemente relacionado con la celebración de festividades, lo que lleva a una menor precaución por parte de los conductores.
+
+2. **Mayor Número de Víctimas en Horas de la Madrugada:**
+   Se registra un aumento en el número de víctimas durante las horas de la madrugada, atribuido a factores como la limitada visibilidad y la fatiga de los conductores.
+
+3. **Impacto en Motociclistas y Peatones:**
+   Motociclistas y peatones son los más afectados debido a su mayor vulnerabilidad, ya que carecen de las medidas de seguridad que tienen los conductores de automóviles.
+
+4. **Involucramiento Frecuente de Automóviles en Accidentes:**
+   Los automóviles son los más frecuentemente involucrados, posiblemente debido a distracciones al volante y comportamientos arriesgados como el exceso de velocidad.
+
+5. **Mayores Accidentes en Avenidas:**
+   La mayoría de los accidentes ocurren en avenidas, posiblemente debido a la congestión vehicular y condiciones de conducción más desafiantes en estas áreas.
 
 
-## **Tecnologias Utilizadas**
+### Posibles Soluciones:
 
-- **Lenguaje de Programación:** Python
-- **Bibliotecas y Frameworks:**
-  - Pandas
-  - Matplotlib
-  - Streamlit
-  - Seaborn
-  - Folium
-- **Herramientas de Despliegue:**
-  - Streamlit Deployment Platform
-- **Herramientas de Visualización de Datos:**
-  - Power BI desktop
-- **Entorno de Desarrollo:**
-  - Jupyter Notebooks 
+1. **Campañas de Concientización:**
+   - Implementar campañas educativas durante noviembre y diciembre.
+   - Destacar riesgos asociados a la conducción imprudente durante festividades.
+   - Mensajes sobre la importancia de mantener la precaución y evitar distracciones.
+
+2. **Refuerzo de Patrullaje Nocturno:**
+   - Aumentar la presencia policial en horas de la madrugada.
+   - Considerar controles de fatiga para garantizar condiciones óptimas de los conductores.
+
+3. **Infraestructura Segura para Peatones y Motociclistas:**
+   - Mejorar cruces peatonales con iluminación.
+   - Establecer carriles exclusivos y señalización para motociclistas.
+
+4. **Programas de Conducción Responsable:**
+   - Desarrollar programas de concientización.
+   - Enfatizar la importancia de evitar distracciones y respetar límites de velocidad.
+   - Incluir incentivos para conductores con historial seguro.
+
+5. **Mejora de la Infraestructura Vial en Avenidas:**
+   - Evaluar y mejorar infraestructura vial en avenidas.
+   - Reducir congestión, mejorar señalización y optimizar flujo de tráfico.
 
 
 ## **Fuente de datos**
